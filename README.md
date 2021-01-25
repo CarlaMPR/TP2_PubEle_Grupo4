@@ -22,16 +22,16 @@ TP2_PubEle_Grupo4
 <p>No ficheiro <b>app.py</b> na parte do <b>FRONTEND</b> foram criadas dez rotas :</p>
 <ul>
 
-  <b>@app.route('/')</b>: rota que devolve a página incial (índice com todos os relatórios e funcionalidades);
-  <b>@app.route('/add', methods=['GET'])</b>: rota que devolve a página onde tem um formulário que permite adicionar um relatório;
-  <b>@app.route('/add', methods=['POST'])</b>: ainda dentro da página anterior, permite fazer o POST do relatório;
-  <b>@app.route('/<report>', methods=['GET'])</b>: rota que devolve a página para visualizar individualmente um relatório;
-  <b>@app.route('/delete', methods=['GET'])</b>: rota que devolve a página que permite eliminar um relatório;
-  <b>@app.route('/delete', methods=['POST'])</b>: ainda dentro da página anterior, permite fazer o POST e efetivamente eliminar o relatório;
-  <b>@app.route('/search', methods=['GET'])</b>: rota que devolve a página que permite procurar relatórios;
-  <b>@app.route('/search', methods=['POST'])</b>: ainda dentro da página anterior, permite efetuar a procura por relatórios que contêm determinada palavra ou expressão (sequência de caracteres espaçados ou não);
-  <b>@app.route('/<report>/edit', methods=['GET'])</b>: permite editar um relatório, opção de editar presente na mesma página que permite visualizar o mesmo;
-  <b>@app.route('/<report>/edit', methods=['POST'])</b>: permite efetivar a edição do relatório
+  <p><b>@app.route('/')</b>: rota que devolve a página incial (índice com todos os relatórios e funcionalidades);</p>
+  <p><b>@app.route('/add', methods=['GET'])</b>: rota que devolve a página onde tem um formulário que permite adicionar um relatório;</p>
+  <p><b>@app.route('/add', methods=['POST'])</b>: ainda dentro da página anterior, permite fazer o POST do relatório;</p>
+  <p><b>@app.route('/<report>', methods=['GET'])</b>: rota que devolve a página para visualizar individualmente um relatório;</p>
+  <p><b>@app.route('/delete', methods=['GET'])</b>: rota que devolve a página que permite eliminar um relatório;</p>
+  <p><b>@app.route('/delete', methods=['POST'])</b>: ainda dentro da página anterior, permite fazer o POST e efetivamente eliminar o relatório;</p>
+  <p><b>@app.route('/search', methods=['GET'])</b>: rota que devolve a página que permite procurar relatórios;</p>
+  <p><b>@app.route('/search', methods=['POST'])</b>: ainda dentro da página anterior, permite efetuar a procura por relatórios que contêm determinada palavra ou expressão (sequência de caracteres espaçados ou não);</p>
+  <p><b>@app.route('/<report>/edit', methods=['GET'])</b>: permite editar um relatório, opção de editar presente na mesma página que permite visualizar o mesmo;</p>
+  <p><b>@app.route('/<report>/edit', methods=['POST'])</b>: permite efetivar a edição do relatório;</p>
 
 </ul>
 
