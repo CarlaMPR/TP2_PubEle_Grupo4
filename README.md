@@ -6,7 +6,7 @@ TP2_PubEle_Grupo4
 <p>Cláudia Palma, A85401</p>
 <p>Eduarda Ribeiro, A8541</p>
 
-<p>O presente trabalho prático consistiu na elaboração de uma aplicação FLASK que permite criar, ler, editar/atualizar e eliminar relatórios (<b>funções CRUD</b>). Foi usada a SHELVE <b>reports.db</b> e, separou-se o backend do frontend da aplicação, <b>ficheiro app.py.</b></p>
+<p>O presente trabalho prático consistiu na elaboração de uma aplicação FLASK que permite criar, ler, editar/atualizar e eliminar relatórios (<b>funções CRUD</b>). Foi usada a SHELVE <b>reports.db</b> (já se encontra povoada com três relatórios) e, separou-se o backend do frontend da aplicação, <b>ficheiro app.py.</b></p>
 
 <p>No ficheiro <b>reports.db</b> foram criadas cinco funções:</p>
 <ul>
@@ -32,18 +32,18 @@ TP2_PubEle_Grupo4
   <p><b>@app.route('/search', methods=['POST'])</b>: ainda dentro da página anterior, permite efetuar a procura por relatórios que contêm determinada palavra ou expressão (sequência de caracteres espaçados ou não);</p>
   <p><b>@app.route('/<report>/edit', methods=['GET'])</b>: permite editar um relatório, opção de editar presente na mesma página que permite visualizar o mesmo;</p>
   <p><b>@app.route('/<report>/edit', methods=['POST'])</b>: permite efetivar a edição do relatório;</p>
-
+    
 </ul>
 
 <p>No ficheiro <b>app.py</b> na parte do <b>BACKEND</b> foram criadas seis rotas:</p>
 <ul>
 
-  <b>@app.route('/api', methods=['GET'])</b>: recorre à função find_all para retornar todos os relatórios existentes; 
-  <b>@app.route('/api/add', methods=['POST'])</b>: permite o insert da informação preenchida no formulário, quer seja para inserir um novo relatório ou editar um já existente;
-  <b>@app.route('/api/<report>', methods=['GET'])</b>: recorre à função find_one para ver um relatório individual;
-  <b>@app.route('/api/delete', methods=['POST'])</b>: recorre à função delete para remover um relatório da base de dados;
-  <b>@app.route('/api/search', methods=['POST'])</b>: recorre à função search para retornar todos os relatórios que contêm determinada palavra ou expressão (sequência de caracteres espaçados ou não);
-  <b>@app.route('/api/<report>/edit', methods=['GET'])</b>: recorre à função find_one para ver um relatório e poder editá-lo;
+  <p><b>@app.route('/api', methods=['GET'])</b>: recorre à função find_all para retornar todos os relatórios existentes;</p>
+  <p><b>@app.route('/api/add', methods=['POST'])</b>: permite o insert da informação preenchida no formulário, quer seja para inserir um novo relatório ou editar um já existente;</p>
+  <p><b>@app.route('/api/<report>', methods=['GET'])</b>: recorre à função find_one para ver um relatório individual;</p>
+  <p><b>@app.route('/api/delete', methods=['POST'])</b>: recorre à função delete para remover um relatório da base de dados;</p>
+  <p><b>@app.route('/api/search', methods=['POST'])</b>: recorre à função search para retornar todos os relatórios que contêm determinada palavra ou expressão (sequência de caracteres espaçados ou não);</p>
+  <p><b>@app.route('/api/<report>/edit', methods=['GET'])</b>: recorre à função find_one para ver um relatório e poder editá-lo;</p>
 
 </ul>
 
