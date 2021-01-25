@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<br>
+	<br>
+	<br>
+	<meta charset=UTF-8"/>
+	<title>{{r['title']}}</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.3/yeti/bootstrap.min.css">
+	<style>
+		body{
+        	text-align:justify;
+        	margin-right:100px;
+        	margin-left:100px;
+    	}     
+    </style>
+</head>
+<body style="font-family:Times New Roman">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.3/yeti/bootstrap.min.css">
+    <style>
+        body{
+            text-align:justify;
+            margin-right:100px;
+            margin-left:100px;
+        }    
+    </style>
+    <h1 align="center"><b>{{r['title']}}</b></h1>
+    <hr align="center" width="70%">
+	<h1 align="center"><b>{{r['theme']}}</b></h1>
+	<br>
+	<h5 align="center">{{r['authors']}}</h5>
+	<br>
+	<h5 align="center">{{r['date']}}</h5>
+	<br>
+	<p align="justify">{{r['text'] | safe}}</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div align="center"><a style="color: #E24700" class="btn btn-light" href="/{{r['title']}}/edit">Editar Relatório</a></li>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div align="center"><a class="btn btn-light" href="/">Retroceder à Página Inicial</a></div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</body>
+</html>

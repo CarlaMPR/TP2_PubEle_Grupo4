@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	<title>Portfolio</title>
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.3/yeti/bootstrap.min.css">
+    </head>
+ 	<body>
+ 		<style>
+			body{
+            	text-align:justify;
+            	margin-right:100px;
+            	margin-left:100px;
+        	}     
+        </style>
+        <style>
+	      	#header{
+	          background-color:#DCDCDC;
+	          color:black;
+	          text-align:center;
+	          padding:7px;
+	      	}
+	    </style>
+        <br>
+	    <h1 align="center"><b>Portfolio</b></h1>
+	    <hr align="center" width="50%">
+	    <h3 align="center">Universidade do Minho</h3>
+	    <br>
+	    <center><img src="https://facs2017.di.uminho.pt/sites/default/files/logo_UMEENG_sem_nome.jpg" with=110 height=80></center>
+	    <br>
+	    <h3 align="center">Mestrado Integrado em Engenharia Biomédica</h3>
+	    <hr align="center" width="80%">
+		<br>
+		<div id="header">
+    		<h2><b>Grupo 4</b></h2>
+		</div>
+		<style>
+		  .heading { color: #E24700; }
+		</style>
+		<br>
+		<ul>
+		   <li><b> Nome: </b>Carla Maria Pinto Rodrigues<br><br><b> E-mail: </b><a class="heading" href="mailto:a84710@alunos.uminho.pt">a84710@alunos.uminho.pt</a><br><br><b> Número de aluno: </b>84710<br><br></li>
+		   <li><b> Nome: </b>Cláudia Patrícia Ribeiro Palma<br><br><b> E-mail: </b><a class="heading" href="mailto:a85401@alunos.uminho.pt">a85401@alunos.uminho.pt</a><br><br><b> Número de aluno: </b>85401<br><br></li>
+		   <li><b> Nome: </b>Eduarda Maria Lopes Ribeiro<br><br><b> E-mail: </b><a class="heading" href="mailto:a85412@alunos.uminho.pt">a85412@alunos.uminho.pt</a><br><br><b> Número de aluno: </b>85412<br><br></li>
+		</ul>
+		<div id="header">
+    		<h2><b>Docentes</b></h2>
+		</div>
+		<br>
+		<ul>
+		   <p>José João Antunes Guimarães Dias Almeida</p>
+		   <p>Pedro Rafael Paiva Moura</p>
+		</ul>
+    	<div id="header">
+    		<h2><b>Relatórios</b></h2>
+    	</div>
+    	<br>
+		<ul>
+		    {% for report in reports: %}
+		        <li><a class="heading" href="/{{report}}">{{report}}</a></li><br>
+		    {% endfor %}
+		</ul>
+    	<br>
+    	<div id="header">
+    		<h2><b>Funcionalidades</b></h2>
+    	</div>
+    	<br>
+    	<div align="center">
+	    	<ul>
+		    	<a class="btn btn-light" href="/search">Procurar relatório</a>
+		    	
+		    	<a class="btn btn-light" href="/add">Adicionar novo relatório</a>
+
+				<a class="btn btn-light" href="/delete">Eliminar relatório</a>
+		    </ul>
+		</div>
+		<br>    	
+   	</body>   	
+</html>
+

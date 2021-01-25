@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<br>
+	<br>
+	<br>
+	<meta charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Procurar Relatório</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.3/yeti/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		body{
+        	text-align:justify;
+        	margin-right:100px;
+        	margin-left:100px;
+    	}     
+    	input[type=text] {
+		  width: 250px;
+		  box-sizing: border-box;
+		  border: 2px solid #ccc;
+		  border-radius: 4px;
+		  font-size: 16px;
+		  background-color: white;
+		  background-image:url('https://www.w3schools.com/css/searchicon.png');
+		  background-position: 10px 15px; 
+		  background-repeat: no-repeat;
+		  padding: 15px 20px 12px 60px;
+		  -webkit-transition: width 0.4s ease-in-out;
+		  transition: width 0.4s ease-in-out;
+		}
+		input[type=text]:focus {
+  			width: 35%;
+		}
+    </style>
+</head>
+<body>
+	<hr>
+	<br>
+	<h1 align="center">Procurar Relatório</h1>
+	<br>
+	<div align="center">
+	<form action="search" method='post'>
+		<input type="text" name="search" placeholder="Search..">
+	</form>
+	</div>
+	<br>
+	<br>
+	<div class="w3-container">
+	<ul class="w3-ul w3-hoverable">
+
+		<h4 align="center">{{text}}</h4><br>
+		
+		{% for report, t in dict_item %}
+			<div align="center">
+				<h3><li><a href="/{{report}}" style="color: #E24700">{{report}}</a></li></h3>
+	    		<p>(...){{t | safe}}(...)</p><br>
+	    	</div>
+	    {% endfor %}
+	</ul>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div align="center"><a class="btn btn-light" href="/">Retroceder à Página Inicial</a></div>
+</body>
+</html>
+

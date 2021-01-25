@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<br>
+	<br>
+	<br>
+	<meta charset=UTF-8"/>
+	<title>Eliminar Relatório</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.3/yeti/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		body{
+        	text-align:justify;
+        	margin-right:100px;
+        	margin-left:100px;
+    	}     
+	</style>
+</head>
+<body>
+	<hr>
+	<br>
+	<div align="center">
+	<h1>Eliminar Relatório</h1>
+	<br>
+	<br>
+	<form action="delete" method='post'>
+		<label><h4>Selecione Relatório:</h4></label><br>
+		
+		<select name="report">
+			{% for report in reports: %}
+			<option value="{{report}}">{{report}}</option>
+			{% endfor %}		
+		</select>
+
+		<input type="submit" value="Submit">
+	</form>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div align="center"><a class="btn btn-light" href="/">Retroceder à Página Inicial</a></div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</body>
+</html>
