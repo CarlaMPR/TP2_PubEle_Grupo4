@@ -6,7 +6,7 @@ TP2_PubEle_Grupo4
 <p>Cláudia Palma, A85401</p>
 <p>Eduarda Ribeiro, A8541</p>
 
-<p>O presente trabalho prático consistiu na elaboração de uma aplicação FLASK que permite criar, ler, editar/atualizar e eliminar relatórios (<b>funções CRUD</b>). Foi usada a SHELVE <b>reports.db</b> e, separou-se o backend do frontend da aplicação, <b>ficheiro app.py.</p>
+<p>O presente trabalho prático consistiu na elaboração de uma aplicação FLASK que permite criar, ler, editar/atualizar e eliminar relatórios (<b>funções CRUD</b>). Foi usada a SHELVE <b>reports.db</b> e, separou-se o backend do frontend da aplicação, <b>ficheiro app.py.</b></p>
 
 <p>No ficheiro <b>reports.db</b> foram criadas cinco funções:</p>
 <ul>
