@@ -8,14 +8,14 @@ TP2_PubEle_Grupo4
 
 <p>O presente trabalho prático consistiu na elaboração de uma aplicação FLASK que permite criar, ler, editar/atualizar e eliminar relatórios (<b>funções CRUD</b>). Foi usada a SHELVE <b>reports.db</b> (já se encontra povoada com três relatórios) e, separou-se o backend do frontend da aplicação, <b>ficheiro app.py.</b></p>
 
-<p>No ficheiro <b>reports.db</b> foram criadas cinco funções:</p>
+<p>No ficheiro <b>db_reports.py</b> foram criadas cinco funções:</p>
 <ul>
 
   <p><b>find_all</b>: permite visualizar o título de todos os relatórios;</p>
   <p><b>find_one</b>: permite visualizar apenas um relatório;</p>
   <p><b>insert</b>: permite inserir um relatório na base de dados;</p>
   <p><b>delete</b>: permite eliminar um relatório da base de dados;</p>
-  <p><b>search</b>: permite procurar todos os relatórios que tenham uma determinada palavra ou expressão (sequência de caracteres espaçados ou não), e ainda, retornar o excerto do relatório onde aparece a palavra/expressão em questão a negrito; de salientar que se trata de uma pesquisa case insensitive.</p>
+  <p><b>search</b>: permite procurar todos os relatórios que tenham uma determinada palavra ou expressão (sequência de caracteres), e ainda, retornar o excerto do relatório onde aparece a palavra/expressão em questão a negrito; de salientar que se trata de uma pesquisa case insensitive.</p>
 
 </ul>
 
@@ -29,7 +29,7 @@ TP2_PubEle_Grupo4
   <p><b>@app.route('/delete', methods=['GET'])</b>: rota que devolve a página que permite eliminar um relatório;</p>
   <p><b>@app.route('/delete', methods=['POST'])</b>: ainda dentro da página anterior, permite fazer o POST e efetivamente eliminar o relatório;</p>
   <p><b>@app.route('/search', methods=['GET'])</b>: rota que devolve a página que permite procurar relatórios;</p>
-  <p><b>@app.route('/search', methods=['POST'])</b>: ainda dentro da página anterior, permite efetuar a procura por relatórios que contêm determinada palavra ou expressão (sequência de caracteres espaçados ou não);</p>
+  <p><b>@app.route('/search', methods=['POST'])</b>: ainda dentro da página anterior, permite efetuar a procura por relatórios que contêm determinada palavra ou expressão (sequência de caracteres);</p>
   <p><b>@app.route('/<report>/edit', methods=['GET'])</b>: permite editar um relatório, opção de editar presente na mesma página que permite visualizar o mesmo;</p>
   <p><b>@app.route('/<report>/edit', methods=['POST'])</b>: permite efetivar a edição do relatório;</p>
     
@@ -42,7 +42,7 @@ TP2_PubEle_Grupo4
   <p><b>@app.route('/api/add', methods=['POST'])</b>: permite o insert da informação preenchida no formulário, quer seja para inserir um novo relatório ou editar um já existente;</p>
   <p><b>@app.route('/api/<report>', methods=['GET'])</b>: recorre à função find_one para ver um relatório individual;</p>
   <p><b>@app.route('/api/delete', methods=['POST'])</b>: recorre à função delete para remover um relatório da base de dados;</p>
-  <p><b>@app.route('/api/search', methods=['POST'])</b>: recorre à função search para retornar todos os relatórios que contêm determinada palavra ou expressão (sequência de caracteres espaçados ou não);</p>
+  <p><b>@app.route('/api/search', methods=['POST'])</b>: recorre à função search para retornar todos os relatórios que contêm determinada palavra ou expressão (sequência de caracteres);</p>
   <p><b>@app.route('/api/<report>/edit', methods=['GET'])</b>: recorre à função find_one para ver um relatório e poder editá-lo;</p>
 
 </ul>
@@ -56,6 +56,6 @@ TP2_PubEle_Grupo4
   <p><b>add_view</b>: template da página que contém o formulário para adicionar relatórios;</p>
   <p><b>edit_view</b>: template da página que contém o formulário para editar um relatórios;</p>
   <p><b>delete_view</b>: template da página que permite selecionar o relatório a eliminar;</p>
-  <p><b>search_view</b>: template da página que permite procurar todos os relatórios que contêm a palavra ou expressão (sequência de caracteres espaçados ou não) inserida na barra de pesquisa;</p>
+  <p><b>search_view</b>: template da página que permite procurar todos os relatórios que contêm a palavra ou expressão (sequência de caracteres) inserida na barra de pesquisa;</p>
 
 </ul>
