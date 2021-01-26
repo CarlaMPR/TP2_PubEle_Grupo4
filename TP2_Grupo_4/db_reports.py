@@ -23,7 +23,7 @@ def delete(report):
         del(s[report['report']])
         return list(s.keys())
 
-# Função que permite procurar todos os relatórios que tenham uma determinada palavra ou expressão (sequência de caracteres espaçados ou não)
+# Função que permite procurar todos os relatórios que tenham uma determinada palavra ou expressão (sequência de caracteres)
 # Permite ainda, retornar o excerto do relatório onde aparece a palavra/ expressão em questão a negrito
 # De salientar que se trata de uma pesquisa case insensitive
 def search(word):
