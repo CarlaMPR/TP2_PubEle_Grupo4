@@ -63,7 +63,7 @@ def get_search_word():
 	
 	return render_template('search_view.html')
 
-# Ainda dentro da página anterior, permite efetuar a procura por relatórios que contêm determinada palavra ou expressão (sequência de caracteres espaçados ou não)
+# Ainda dentro da página anterior, permite efetuar a procura por relatórios que contêm determinada palavra ou expressão (sequência de caracteres)
 @app.route('/search', methods=['POST'] )
 def search_report():
 	
@@ -133,7 +133,7 @@ def api_delete_report():
 	
 	return json.dumps(db_reports.find_all())
 
-# Recorre à função search para retornar todos os relatórios que contêm determinada palavra ou expressão (sequência de caracteres espaçados ou não)
+# Recorre à função search para retornar todos os relatórios que contêm determinada palavra ou expressão (sequência de caracteres)
 @app.route('/api/search', methods=['POST'])
 def api_search_report():
 	
